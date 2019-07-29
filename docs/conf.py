@@ -40,9 +40,13 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax',
+    'sphinx.ext.autodoc', #tell it a function and will pull the doc string
+    'sphinx.ext.mathjax', #latex will be rendered with this
+    'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon',
 ]
+
+autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
